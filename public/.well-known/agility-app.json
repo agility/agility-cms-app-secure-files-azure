@@ -1,0 +1,38 @@
+{
+	"name": "Azure Secure Files App",
+	"documentationLink": "https://agilitycms.com/docs/apps/azure-secure-files",
+	"description": "Deliver secure files in your app or website using Azure Blob Storage.",
+	"version": "1.0.0",
+	"__sdkVersion": "2.0.0",
+	"configValues": [
+		{
+			"label": "Container Name",
+			"description": "The name of the container to upload files to.",
+			"name": "containerName",
+			"type": "string"
+		},
+		{
+			"label": "Storage Connection String",
+			"description": "The connection string to your Azure Blob Storage acccount.",
+			"name": "connectionString",
+			"type": "string"
+		}
+	],
+	"capabilities": {
+		"fields": [
+			{
+				"name": "azure-secure-file",
+				"label": "Secure File Attachment",
+				"description": "A secure file attachment from Azure."
+			}
+		],
+		"modals": [
+			{
+				"name": "azure-secure-file-selector",
+				"label": "Secure File Selector",
+				"description": "Select a secure file."
+			}
+		],
+		"installScreen": false
+	}
+}
