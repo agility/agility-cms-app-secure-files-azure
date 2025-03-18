@@ -190,34 +190,6 @@ export default function Field() {
 										<div className="text-gray-500">Modified On</div>
 										<div className="">{formatDateTime(selectedFile.properties.lastModified)}</div>
 									</div>
-
-									{/* {productDetail && (
-								<>
-									<div className=" flex justify-between py-2 border-b border-b-gray-200">
-										<div className="text-gray-500">Stock</div>
-										<div className="flex gap-1 items-center">
-											{productDetail?.inventory?.isInStock ? (
-												<div title="In stock">
-													<IconCheck className="h-5 w-5 text-green-500" />
-												</div>
-											) : (
-												<div title="Out of stock">
-													<IconBan className="h-5 w-5 text-red-500" />
-												</div>
-											)}
-											{productDetail.availabilityV2?.status}
-										</div>
-									</div>
-									{productDetail?.prices?.price?.value && (
-										<div className=" flex justify-between py-2 border-b border-b-gray-200 ">
-											<div className="text-gray-500">Price</div>
-											<div className="">
-												${productDetail.prices.price.value} {productDetail.prices.price.currencyCode}
-											</div>
-										</div>
-									)}
-								</>
-							)} */}
 								</div>
 							</div>
 						)
