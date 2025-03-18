@@ -103,6 +103,9 @@ export default function FileListing({ connectionString, containerName, onSelect:
 				</div>
 			)}
 			{error && <div>Error? {`${error}`}</div>}
+			{!loading && !error && data.length == 0 && (
+				<div className="p-3 text-sm">No files returned. Drag a file here to upload it.</div>
+			)}
 			{!loading && !error && data.length > 0 && (
 				<div className="min-h-0 flex-1 py-4">
 					<div id="scrolling-list-elem" className="scroll-black h-full overflow-y-auto">
